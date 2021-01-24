@@ -1,0 +1,35 @@
+Balloons
+--------
+
+5 x 100g Latex for £35
+http://www.randomengineering.co.uk/Random_Aerospace/Balloons.html
+
+
+blah
+
+Other Projects
+--------------
+
+Dave Akerman Pi Tracker with SSDV:
+http://www.daveakerman.com/?p=2101
+
+
+PiTS Code
+---------
+
+https://github.com/PiInTheSky/pits
+
+
+Shopping List
+-------------
+
+Pi Zero v1.3 no header - ordered 1
+PCB -
+DRF1278F Module - Got
+3 x AAA / AA - Got
+GPS - Got
+Pi Camera - ordered
+	https://shop.pimoroni.com/products/raspberry-pi-zero-camera-module?variant=3031238213642
+	https://www.aliexpress.com/item/1005001310915027.html?spm=a2g0o.placeorder.0.0.425b321eO9xPlT&mp=1
+SD Cards
+	https://www.amazon.co.uk/Kioxia-16GB-Exceria-Class-microSD/dp/B088RQ6G7R
