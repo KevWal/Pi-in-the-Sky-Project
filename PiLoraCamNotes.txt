@@ -4,11 +4,13 @@ Balloons
 5 x 100g Latex for £35
 http://www.randomengineering.co.uk/Random_Aerospace/Balloons.html
 
+10 x Chinnese 36" for £20
+https://www.aliexpress.com/item/32803586452.html
 
-blah
 
-Other Projects
---------------
+
+Others Projects
+---------------
 
 Dave Akerman Pi Tracker with SSDV:
 http://www.daveakerman.com/?p=2101
@@ -23,13 +25,95 @@ https://github.com/PiInTheSky/pits
 Shopping List
 -------------
 
-Pi Zero v1.3 no header - ordered 1
-PCB -
-DRF1278F Module - Got
-3 x AAA / AA - Got
-GPS - Got
-Pi Camera - ordered
+Pi Zero v1.3
+	https://shop.pimoroni.com/products/raspberry-pi-zero
+DRF1278F Module
+	https://www.tindie.com/products/dorji_com/arduino-433mhz-lora-sx1278-module-drf1278f/
+3 or 4 x AAA / AA
+GPS
+	ATGM or uBlox
+Pi Camera
 	https://shop.pimoroni.com/products/raspberry-pi-zero-camera-module?variant=3031238213642
+		OmniVision OV5647 - 5Mp - 160 deg - £18
+		Cheaper here - https://www.aliexpress.com/i/4000055161713.html - 120 or 160 deg - £8
+		
 	https://www.aliexpress.com/item/1005001310915027.html?spm=a2g0o.placeorder.0.0.425b321eO9xPlT&mp=1
+		OmniVision OV5647 - 5Mp - 72 deg - £8
+		
+	https://item.taobao.com/item.htm?spm=a21wu.12321156-tw.0.0.7ee5795e3byriK&id=576916911177
+		Sony 219 8Mp - wide angle
+		
+	Other Options
+		https://world.taobao.com/item/623389875418.htm?spm=a21wu.12321156-tw.0.0.33b266ef2ayRkV
+		https://world.taobao.com/item/622834629794.htm?spm=a21wu.12321156-tw.0.0.33b266ef2ayRkV
+		https://world.taobao.com/item/618546215996.htm
+		
 SD Cards
 	https://www.amazon.co.uk/Kioxia-16GB-Exceria-Class-microSD/dp/B088RQ6G7R
+
+A2D for battery voltage
+	https://uk.rs-online.com/web/p/general-purpose-adcs/7037958
+	
+
+Instructions
+------------
+
+Write Raspberry Pi OS Lite SD Card from here: https://www.raspberrypi.org/software/
+
+#If Pi Zero W then enable mini Uart - add enable_uart=1 to config.txt: #https://www.raspberrypi.org/documentation/configuration/uart.md
+
+#Attach serial console, 115,200 baud:  https://learn.adafruit.com/assets/41071
+
+Enable SSH - touch /boot/ssh
+
+Enable OTG Networking -
+	in config.txt add dtoverlay=dwc2
+	in cmdline.txt after rootwait add modules-load=dwc2,g_ether
+(https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget)
+
+Power via PC to OTG port
+
+If recongnised as a COM port not an Ethernet port, install:
+https://web.archive.org/web/20170606180344/http://domotique.caron.ws/wp-content/uploads/telechargement/RPI%20Driver%20OTG.zip
+
+Install windows bonjour services if needed:
+https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview
+
+Allow connection shareing to get Internet over usb:
+https://desertbot.io/blog/headless-pi-zero-ssh-access-over-usb-windows
+
+Ssh to pi@raspberrypi.local / raspberry
+
+Follow Dave's instructions here:  http://www.pi-in-the-sky.com/index.php?id=sd-card-image-from-scratch
+
+
+Pi Camera Testing
+-----------------
+On the PI:
+	raspivid -t 0 -l -o tcp://0.0.0.0:3333
+	
+On the PC:
+	C:\Program Files\VideoLAN\VLC\vlc tcp/h264://raspberrypi.local:3333
+
+Putty shortcut:
+	"C:\Program Files\PuTTY\putty.exe" pi@raspberrypi.local -pw raspberry
+
+Weight
+------
+
+Tracker - 20g?
+3 x AA - 47g (7,500mah at -40) = 20 hours
+4 x AAA - 31.5g (3,600mah at -40) = 10 hours?
+
+60g:
+3 x Chineese, 55Ltr Hydrogen each, 6g free lift each, 0.120m3 unstretched volume, 8,200m float, 1.0m/sec, 2 hours to float.
+
+2 x Chineese, 63Ltr Hydrogen each, 5.5g free lift each, 0.120m3 unstretched volume, 6,800m float, 0.9m/sec, 2 hours to float.
+
+Detailed Weights
+----------------
+
+Pi Zero 1.3 (not W) = 9.1g, Remove HDMI & 1 x USB @ 0.9g = 8.2g
+
+Add only pins needed = 
+
