@@ -27,11 +27,13 @@ Shopping List
 
 Pi Zero v1.3
 	https://shop.pimoroni.com/products/raspberry-pi-zero
+	
 DRF1278F Module
 	https://www.tindie.com/products/dorji_com/arduino-433mhz-lora-sx1278-module-drf1278f/
-3 or 4 x AAA / AA
+
 GPS
 	ATGM or uBlox
+
 Pi Camera
 	https://shop.pimoroni.com/products/raspberry-pi-zero-camera-module?variant=3031238213642
 		OmniVision OV5647 - 5Mp - 160 deg - £18
@@ -79,10 +81,14 @@ https://web.archive.org/web/20170606180344/http://domotique.caron.ws/wp-content/
 Install windows bonjour services if needed:
 https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview
 
-Allow connection shareing to get Internet over usb:
+Allow connection sharing to get Internet over usb:
 https://desertbot.io/blog/headless-pi-zero-ssh-access-over-usb-windows
+If you have issues accessing the internet from pi give both ends a static IP?
 
 Ssh to pi@raspberrypi.local / raspberry
+
+
+
 
 Follow Dave's instructions here:  http://www.pi-in-the-sky.com/index.php?id=sd-card-image-from-scratch
 
@@ -98,22 +104,44 @@ On the PC:
 Putty shortcut:
 	"C:\Program Files\PuTTY\putty.exe" pi@raspberrypi.local -pw raspberry
 
+
 Weight
 ------
-
-Tracker - 20g?
+Tracker - 18.5g + Buble wrap & Tape = 20.5g
 3 x AA - 47g (7,500mah at -40) = 20 hours
 4 x AAA - 31.5g (3,600mah at -40) = 10 hours?
 
-60g:
-3 x Chineese, 55Ltr Hydrogen each, 6g free lift each, 0.120m3 unstretched volume, 8,200m float, 1.0m/sec, 2 hours to float.
+47 + 20.5 = 67.5g / 2 = 34g
+3 x Chineese, 50Ltr Hydrogen each, 5g free lift each, 0.120m3 unstretched volume, 7,850m float, 1.0m/sec, 2 hours to float.
 
-2 x Chineese, 63Ltr Hydrogen each, 5.5g free lift each, 0.120m3 unstretched volume, 6,800m float, 0.9m/sec, 2 hours to float.
+2 x Chineese, 66Ltr Hydrogen each, 5.0g free lift each, 39g neck lift each, 0.120m3 unstretched volume, 6,340m float, 1.0m/sec, 2 hours to float.
+
 
 Detailed Weights
 ----------------
-
 Pi Zero 1.3 (not W) = 9.1g, Remove HDMI & 1 x USB @ 0.9g = 8.2g
 
-Add only pins needed = 
+
+Frequencies
+-----------
+IR2030/1/10 433.05-434.79 MHz 10 mW e.r.p. Duty cycle limit 10% or
+IR2030/1/12 433.04-434.79 MHz 10 mW e.r.p. Channel Spacing <= 25 kHz
+LoRa frequency in cwnter frequency, +- 10Khz for SSDC, +-20Khz for uplink
+UK Lowest noise - 434.7 to 434.8
+Ben's advice - 434.737 or 434.712, keep away from 434.725 and 434.750
+434.5 to 435 is Scandanavia repeater output
+Curent tx'ing and uplinking on 434.737Mhz
+
+PCB Changes
+-----------
+Mark LED orientation and Red (1) vs Green (2)
+Make all components top side?
+
+
+SSDV Packet Resend
+------------------
+https://www.daveakerman.com/?p=2195
+
+1-minute cycle, tracker listening from 0s to 5s past the minute, and the gateway transmitting at the 2s mark.
+
 
