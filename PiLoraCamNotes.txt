@@ -138,6 +138,15 @@ Mark LED orientation and Red (1) vs Green (2)
 Make all components top side?
 
 
+Next Flight
+-----------
+Launch earlier
+Pic every 15 seconds
+Increase quality and size of images
+High high mode with bigger pics?
+Change image size and quality depending on uplink comand?
+
+
 SSDV Packet Resend
 ------------------
 https://www.daveakerman.com/?p=2195
