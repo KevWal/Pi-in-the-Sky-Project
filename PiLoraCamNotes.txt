@@ -34,16 +34,20 @@ DRF1278F Module
 GPS
 	ATGM or uBlox
 
-Pi Camera
+Pi Camera	https://www.aliexpress.com/item/1005001310915027.html?spm=a2g0o.placeorder.0.0.425b321eO9xPlT&mp=1
+		OmniVision OV5647 - 5Mp - 72 deg - £8
+		
 	https://shop.pimoroni.com/products/raspberry-pi-zero-camera-module?variant=3031238213642
 		OmniVision OV5647 - 5Mp - 160 deg - £18
 		Cheaper here - https://www.aliexpress.com/i/4000055161713.html - 120 or 160 deg - £8
 		
-	https://www.aliexpress.com/item/1005001310915027.html?spm=a2g0o.placeorder.0.0.425b321eO9xPlT&mp=1
-		OmniVision OV5647 - 5Mp - 72 deg - £8
-		
 	https://item.taobao.com/item.htm?spm=a21wu.12321156-tw.0.0.7ee5795e3byriK&id=576916911177
-		Sony 219 8Mp - wide angle
+		Sony IMX219 8Mp - wide angle
+		Couldn't get to work, may work with compute module but not Pi Zero?
+	
+	https://www.waveshare.com/rpi-camera-v2.htm
+	https://www.waveshare.com/imx219-d160.htm
+		Sony IMX219 8Mp - 160 deg wide angle
 		
 	Other Options
 		https://world.taobao.com/item/623389875418.htm?spm=a21wu.12321156-tw.0.0.33b266ef2ayRkV
@@ -126,7 +130,7 @@ Frequencies
 -----------
 IR2030/1/10 433.05-434.79 MHz 10 mW e.r.p. Duty cycle limit 10% or
 IR2030/1/12 433.04-434.79 MHz 10 mW e.r.p. Channel Spacing <= 25 kHz
-LoRa frequency in cwnter frequency, +- 10Khz for SSDC, +-20Khz for uplink
+LoRa frequency in center frequency, +- 10Khz for SSDC, +-20Khz for uplink
 UK Lowest noise - 434.7 to 434.8
 Ben's advice - 434.737 or 434.712, keep away from 434.725 and 434.750
 434.5 to 435 is Scandanavia repeater output
@@ -134,17 +138,23 @@ Curent tx'ing and uplinking on 434.737Mhz
 
 PCB Changes
 -----------
-Mark LED orientation and Red (1) vs Green (2)
-Make all components top side?
+Mark LED orientation
+Add IM921?
+Allow 4 x AA? 
+
+
 
 
 Next Flight
 -----------
-Launch earlier
+Launch early to get sunrise
 Pic every 15 seconds
 Increase quality and size of images
 High high mode with bigger pics?
 Change image size and quality depending on uplink comand?
+
+Mount Yagi on roof at home?
+Add Rx and Tx amp option to lora-gateway
 
 
 SSDV Packet Resend
