@@ -1,0 +1,12 @@
+
+git checkout master <- Switch to master branch
+
+git checkout master <- Update master branch from GitHub
+
+git checkout develop <- Switch to develop branch
+
+git rebase master <- Update develop from master
+
+git commit -a -m "First commit to add EnableADCVolt option" <- commit all changed files in a commit
+
+git push <- upload commits in his branch to GitHub

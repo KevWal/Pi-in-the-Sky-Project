@@ -215,7 +215,7 @@
 <text x="88.265" y="12.065" size="1.778" layer="26" rot="MR0">JLCJLCJLCJLC</text>
 <text x="9.8806" y="25.2476" size="1.0922" layer="25" font="vector" ratio="16" rot="R270" align="top-center">If Found Please Call
  Kevin   Walton</text>
-<text x="11.43" y="33.655" size="1.27" layer="26" font="vector" ratio="16" rot="MR270">PI Zero PITS V3</text>
+<text x="11.43" y="33.655" size="1.27" layer="26" font="vector" ratio="16" rot="MR270">PI Zero PITS V4</text>
 <text x="9.8806" y="25.2476" size="1.0922" layer="25" font="vector" ratio="16" rot="R270" align="top-center">If Found Please Call
  Kevin   Walton</text>
 <text x="12.7" y="25.2476" size="1.6764" layer="25" font="vector" ratio="16" rot="R270" align="top-center">+44 7867   825 847</text>
@@ -2415,10 +2415,9 @@ Please make sure your boards conform to these design rules.
 <attribute name="DESCRIPTION" value=" Temperature Sensor Digital, Local -55°C ~ 125°C 12 b 8-SOIC " x="17.7546" y="13.462" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Maxim Integrated" x="17.7546" y="13.462" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="DS18B20" x="17.7546" y="13.462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="17.7351" y="10.31345" size="0.61078125" layer="25" ratio="20" align="bottom-center"/>
 <attribute name="PACKAGE" value="TO-226-3 Maxim" x="17.7546" y="13.462" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="None" x="17.7546" y="13.462" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.7351" y="16.73593125" size="0.610053125" layer="27" ratio="20" align="top-center"/>
+<attribute name="VALUE" x="17.7605" y="16.38033125" size="0.8128" layer="27" font="vector" ratio="19" align="top-center"/>
 </element>
 </elements>
 <signals>

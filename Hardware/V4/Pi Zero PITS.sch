@@ -11603,7 +11603,7 @@ by exp-lbrs.ulp</description>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100nF 0603"/>
 <part name="GND38" library="SparkFun" deviceset="GND" device=""/>
 <part name="CK1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="BLM18EG601SN1D"/>
-<part name="U$4" library="ava" deviceset="DS1820" device="SOIC"/>
+<part name="18B20Z" library="ava" deviceset="DS1820" device="SOIC"/>
 <part name="CK2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="BLM15HD102SN1D"/>
 <part name="CK3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="BLM15HD102SN1D"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
@@ -11868,7 +11868,7 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="95.25" y="168.6814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="95.25" y="173.482" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$4" gate="G$1" x="246.38" y="63.5" smashed="yes" rot="R270"/>
+<instance part="18B20Z" gate="G$1" x="246.38" y="63.5" smashed="yes" rot="R270"/>
 <instance part="CK2" gate="G$1" x="78.74" y="139.7" smashed="yes">
 <attribute name="NAME" x="69.85" y="141.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.47" y="141.478" size="1.778" layer="96"/>
@@ -12145,7 +12145,7 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="18B20Z" gate="G$1" pin="GND"/>
 <wire x1="241.3" y1="68.58" x2="241.3" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -12203,7 +12203,7 @@ by exp-lbrs.ulp</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="63.5" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
 <junction x="233.68" y="63.5"/>
-<pinref part="U$4" gate="G$1" pin="DQ"/>
+<pinref part="18B20Z" gate="G$1" pin="DQ"/>
 <wire x1="213.36" y1="63.5" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="DQ"/>
 </segment>
@@ -12337,7 +12337,7 @@ by exp-lbrs.ulp</description>
 <label x="233.68" y="50.8" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="60.96" x2="241.3" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
+<pinref part="18B20Z" gate="G$1" pin="VCC"/>
 <wire x1="220.98" y1="58.42" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="53.34" x2="233.68" y2="53.34" width="0.1524" layer="91"/>
 <junction x="233.68" y="53.34"/>
