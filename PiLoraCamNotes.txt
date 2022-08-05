@@ -164,6 +164,13 @@ Text under GPS AerialGPS Aerial length - not corrct for either chip
 Add serial console port - https://learn.adafruit.com/assets/41071
 
 
+Recieving LoRa
+--------------
+
+Portable RX using TTGO device with https://github.com/KevWal/LoraBluetooth
+
+
+
 Next Flight
 -----------
 Launch early to get sunrise
