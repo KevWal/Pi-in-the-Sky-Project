@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2387,11 +2387,11 @@ Please make sure your boards conform to these design rules.
 <attribute name="SOURCELIBRARY" value="Maxim_2018-11-30" x="27.305" y="29.845" size="1.778" layer="27" display="off"/>
 <attribute name="VENDOR" value="Maxim Integrated Products" x="27.305" y="29.845" size="1.778" layer="27" display="off"/>
 </element>
-<element name="PAD4" library="KEW_HF_V13" package="SMD_SMALL" value="" x="71.755" y="32.385" smashed="yes">
-<attribute name="VALUE" x="71.755" y="32.385" size="0.0254" layer="27"/>
+<element name="PAD4" library="KEW_HF_V13" package="SMD_SMALL" value="" x="72.9615" y="32.385" smashed="yes">
+<attribute name="VALUE" x="72.9615" y="32.385" size="0.0254" layer="27"/>
 </element>
-<element name="PAD5" library="KEW_HF_V13" package="SMD_SMALL" value="" x="71.755" y="17.145" smashed="yes">
-<attribute name="VALUE" x="71.755" y="17.145" size="0.0254" layer="27"/>
+<element name="PAD5" library="KEW_HF_V13" package="SMD_SMALL" value="" x="72.9615" y="17.145" smashed="yes">
+<attribute name="VALUE" x="72.9615" y="17.145" size="0.0254" layer="27"/>
 </element>
 <element name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100nF 0603" x="22.225" y="29.845" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.2726" y="31.5618" size="0.8128" layer="25" font="vector" ratio="19"/>
@@ -2943,8 +2943,8 @@ Please make sure your boards conform to these design rules.
 <via x="77.1398" y="19.3802" extent="1-16" drill="0.35"/>
 <via x="77.1398" y="17.9832" extent="1-16" drill="0.35"/>
 <via x="77.1398" y="16.2052" extent="1-16" drill="0.35"/>
-<via x="73.3298" y="16.2052" extent="1-16" drill="0.35"/>
-<via x="73.3298" y="18.0086" extent="1-16" drill="0.35"/>
+<via x="71.4248" y="16.2052" extent="1-16" drill="0.35"/>
+<via x="71.4375" y="18.0086" extent="1-16" drill="0.35"/>
 <via x="73.3298" y="13.6652" extent="1-16" drill="0.35"/>
 <via x="77.1398" y="13.6652" extent="1-16" drill="0.35"/>
 <via x="56.8706" y="20.2692" extent="1-16" drill="0.35"/>
