@@ -12,7 +12,7 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -2840,7 +2840,7 @@ Please make sure your boards conform to these design rules.
 <via x="53.34" y="12.7" extent="1-16" drill="0.35"/>
 <via x="26.3144" y="13.6906" extent="1-16" drill="0.35"/>
 <via x="28.2448" y="13.6144" extent="1-16" drill="0.35"/>
-<via x="36.9316" y="18.5928" extent="1-16" drill="0.35"/>
+<via x="37.0586" y="18.5928" extent="1-16" drill="0.35"/>
 <via x="40.3352" y="15.5702" extent="1-16" drill="0.35"/>
 <via x="42.2148" y="15.5956" extent="1-16" drill="0.35"/>
 <via x="44.7802" y="15.5448" extent="1-16" drill="0.35"/>
@@ -3605,7 +3605,6 @@ Please make sure your boards conform to these design rules.
 <approved hash="18,29,5edaddd95d22de21"/>
 <approved hash="18,29,0dd28ed10eda8dd9"/>
 <approved hash="18,29,e0e41a68ba6740eb"/>
-<approved hash="18,29,21d6acada65f3d1c"/>
 <approved hash="18,29,cd26752a354f8d43"/>
 <approved hash="18,29,d3f45df01d929396"/>
 <approved hash="18,29,2202d90fbc1c0544"/>
@@ -3614,7 +3613,6 @@ Please make sure your boards conform to these design rules.
 <approved hash="18,29,512c54374df40d02"/>
 <approved hash="18,29,76a9825a78aaa946"/>
 <approved hash="18,29,c04157ca0d04d399"/>
-<approved hash="18,29,3d30e761cddc1673"/>
 <approved hash="23,1,b0d6afa2bb712b1d"/>
 <approved hash="23,1,61100f165b085e50"/>
 <approved hash="23,1,b3f721092179b387"/>

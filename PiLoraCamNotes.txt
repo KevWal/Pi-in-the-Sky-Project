@@ -131,7 +131,9 @@ Power Options
 
 Option 1 - 3 x AA / AAA Batteries connected to 5V_IN Rail.
 
-Option 2 - Any voltage (recomended 4 x AA's) and use U4 or U5 to convert input to 5v.
+Option 2 - Any voltage (recomended 4 x AA's) and use U5 to convert input to 5v.
+
+Option 3 - Solar - use U5 to convert input to 5v?
 
 
 Frequencies
@@ -159,7 +161,6 @@ Mark LED orientation
 Add IM921?
 
 V4 Issue - IC1 measures 5v_IN rail, not battery
-Take back Ground plane around cuttable tracks
 Text under GPS AerialGPS Aerial length - not corrct for either chip
 Add serial console port - https://learn.adafruit.com/assets/41071
 
@@ -167,7 +168,9 @@ Add serial console port - https://learn.adafruit.com/assets/41071
 Recieving LoRa
 --------------
 
-Portable RX using TTGO device with https://github.com/KevWal/LoraBluetooth
+Portable RX using TTGO device with https://github.com/KevWal/LoraBluetooth and Hab Base - http://www.daveakerman.com/?p=2900 or Hab Explorer - http://www.daveakerman.com/?p=2782
+
+Base RX using Lora Gateway - https://github.com/KevWal/lora-gateway
 
 
 

@@ -12,7 +12,7 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -3012,6 +3012,17 @@ Please make sure your boards conform to these design rules.
 <contactref element="SW1" pad="1"/>
 <contactref element="SW1" pad="4"/>
 <contactref element="C11" pad="2"/>
+<via x="19.0602" y="33.6892" extent="1-16" drill="0.35"/>
+<via x="24.9784" y="33.4352" extent="1-16" drill="0.35"/>
+<via x="30.7848" y="33.3248" extent="1-16" drill="0.35"/>
+<via x="33.9344" y="29.5656" extent="1-16" drill="0.35"/>
+<via x="32.3596" y="26.7208" extent="1-16" drill="0.35"/>
+<via x="30.7086" y="24.1808" extent="1-16" drill="0.35"/>
+<via x="77.1398" y="22.7838" extent="1-16" drill="0.35"/>
+<via x="70.8152" y="22.7838" extent="1-16" drill="0.35"/>
+<via x="80.3148" y="13.6652" extent="1-16" drill="0.35"/>
+<via x="95.635" y="35.19" extent="1-16" drill="0.35"/>
+<via x="95.5294" y="13.6906" extent="1-16" drill="0.35"/>
 <wire x1="102.8624" y1="22.3012" x2="101.5" y2="22.125" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$5">
@@ -3615,12 +3626,11 @@ Please make sure your boards conform to these design rules.
 <approved hash="23,1,fc0b3de4bd2abe8d"/>
 <approved hash="23,1,960e1659031b8336"/>
 <approved hash="23,1,cdc155b156d4cea4"/>
-<approved hash="23,1,3c53561639da107b"/>
 <approved hash="23,1,214d3b633b23210d"/>
 <approved hash="23,1,62ab677d639ab989"/>
 <approved hash="23,1,cda14ded3198ffe6"/>
 <approved hash="23,16,1d7cc082c6a41b5a"/>
-<approved hash="23,1,faa9aa43ab10fbfa"/>
+<approved hash="21,19,6557675567556557"/>
 </errors>
 </board>
 </drawing>

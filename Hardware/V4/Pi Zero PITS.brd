@@ -225,6 +225,19 @@
 <vertex x="46.355" y="10.16"/>
 <vertex x="46.355" y="12.065"/>
 </polygon>
+<polygon width="0.1524" layer="41">
+<vertex x="23.622" y="35.1155"/>
+<vertex x="26.416" y="35.1155"/>
+<vertex x="26.416" y="33.909"/>
+<vertex x="23.5585" y="33.909"/>
+<vertex x="23.5585" y="35.052"/>
+</polygon>
+<polygon width="0.1524" layer="41">
+<vertex x="31.75" y="32.512"/>
+<vertex x="31.75" y="29.718"/>
+<vertex x="33.02" y="29.718"/>
+<vertex x="33.02" y="32.512"/>
+</polygon>
 </plain>
 <libraries>
 <library name="ava">
@@ -3025,6 +3038,9 @@ Please make sure your boards conform to these design rules.
 <via x="80.3148" y="13.6652" extent="1-16" drill="0.35"/>
 <via x="95.635" y="35.19" extent="1-16" drill="0.35"/>
 <via x="95.5294" y="13.6906" extent="1-16" drill="0.35"/>
+<via x="35.2044" y="20.9804" extent="1-16" drill="0.35"/>
+<via x="29.5148" y="17.145" extent="1-16" drill="0.35"/>
+<via x="29.5148" y="22.225" extent="1-16" drill="0.35"/>
 <wire x1="102.8624" y1="22.3012" x2="101.5" y2="22.125" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$5">
