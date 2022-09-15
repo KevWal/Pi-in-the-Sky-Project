@@ -10,3 +10,5 @@ git rebase master <- Update develop from master
 git commit -a -m "First commit to add EnableADCVolt option" <- commit all changed files in a commit
 
 git push <- upload commits in his branch to GitHub
+
+<- Create a feature branch

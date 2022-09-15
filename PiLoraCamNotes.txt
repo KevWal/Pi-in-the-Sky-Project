@@ -1,6 +1,5 @@
 Balloons
 --------
-
 5 x 100g Latex for £35
 http://www.randomengineering.co.uk/Random_Aerospace/Balloons.html
 
@@ -11,20 +10,18 @@ https://www.aliexpress.com/item/32803586452.html
 
 Others Projects
 ---------------
-
 Dave Akerman Pi Tracker with SSDV:
 http://www.daveakerman.com/?p=2101
 
 
 PiTS Code
 ---------
-
 https://github.com/PiInTheSky/pits
+https://github.com/KevWal/pits/tree/develop
 
 
 Shopping List
 -------------
-
 Pi Zero v1.3
 	https://shop.pimoroni.com/products/raspberry-pi-zero
 	
@@ -66,7 +63,6 @@ Temperature sensor
 
 Pi SDcard Setup Instructions
 ----------------------------
-
 Write Raspberry Pi OS Lite SD Card from here: https://www.raspberrypi.org/software/
 
 #If Pi Zero W then enable mini Uart - add enable_uart=1 to config.txt: #https://www.raspberrypi.org/documentation/configuration/uart.md
@@ -96,7 +92,7 @@ https://desertbot.io/blog/headless-pi-zero-ssh-access-over-usb-windows
 Properties -> Share Ethernet connection that has Internet
 If you have issues accessing the internet from pi give both ends a static IP.
 
-Or, instaed of Internet Connection Sharing, Bridge the connections in Win10
+Or, instead of Internet Connection Sharing, Bridge the connections in Win10
 
 Ssh to pi@raspberrypi.local / raspberry
 
@@ -119,26 +115,32 @@ Putty shortcut:
 	"C:\Program Files\PuTTY\putty.exe" pi@raspberrypi.local -pw raspberry
 
 
-Weight
-------
-Pi Zero 1.3 (not W) = 9.1g, Remove HDMI & 1 x USB @ 0.9g = 8.2g
-
-Pi Zero + Tracker V2 - 18.5g + Buble wrap & Tape = 20.5g
-3 x AA - 47g (7,500mah at -40) = 20 hours
-4 x AAA - 31.5g (3,600mah at -40) = 10 hours?
-
-47 + 20.5 = 67.5g / 2 = 34g
-3 x Chineese, 50Ltr Hydrogen each, 5g free lift each, 0.120m3 unstretched volume, 7,850m float, 1.0m/sec, 2 hours to float.
-
-2 x Chineese, 66Ltr Hydrogen each, 5g free lift each, 39g neck lift each, 0.120m3 unstretched volume, 6,340m float, 1.0m/sec, 2 hours to float.
-
-
 Power Options
 -------------
-
 Option 1 - 3 x AA / AAA Batteries connected to 5V_IN Rail.
 Option 2 - Any voltage (recomended 4 x AA's) and use U5 to convert input to 5v.
 Option 3 - Solar - use U4 via S+ / S- to convert input to 5v?
+
+
+Build
+-----
+https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/
+GPS Aerial Length 1/4 wave = 45.2mm (1575Mhz) (1/4 wave generally better than chip antenna IMO)
+Tx Aerial Length 1/4 wave = 164mm (434.7Mhz), radial length = 183.6mm
+
+
+Recieving LoRa
+--------------
+Portable RX using TTGO device with https://github.com/KevWal/LoraBluetooth and Hab Base - http://www.daveakerman.com/?p=2900 or Hab Explorer - http://www.daveakerman.com/?p=2782
+
+Base RX using Lora Gateway - https://github.com/KevWal/lora-gateway
+
+
+SSDV Packet Resend
+------------------
+https://www.daveakerman.com/?p=2195
+
+1-minute cycle, tracker listening from 0s to 5s past the minute, and the gateway transmitting at the 2s mark.
 
 
 Frequencies
@@ -151,32 +153,87 @@ Ben's advice - 434.737 or 434.712, keep away from 434.725 and 434.750
 434.5 to 435 is Scandanavia repeater output
 
 
-Build
------
+Weight & Balloons - Flight 1
+----------------------------
+Pi Zero 1.3 (not W) = 9.1g, Remove HDMI & 1 x USB @ 0.9g = 8.2g
+	+ Tracker V2 = 18.5g 
+	+ Bubble wrap & Tape = 20.5g
 
-https://m0ukd.com/calculators/quarter-wave-ground-plane-antenna-calculator/
-GPS Aerial Length = 45mm (575Mhz)
-Tx Aerial Length = 164mm (434.7Mhz)
+3 x AA - 47g (7,500mah at -40) = 20 hours
+4 x AAA - 31.5g (3,600mah at -40) = 10 hours?
+
+47 + 20.5 = 67.5g / 2 = 34g
+3 x Chineese, 50Ltr Hydrogen each, 3g free lift each, 0.120m3 unstretched volume, 7,850m float, 1.0m/sec, 2 hours to float.
+
+2 x Chineese, 66Ltr Hydrogen each, 3g free lift each, 39g neck lift each, 0.120m3 unstretched volume, 6,340m float, 1.0m/sec, 2 hours to float.
 
 
 
-PCB Changes
------------
+Parachute calcs
+---------------
+https://www.translatorscafe.com/unit-converter/en-US/calculator/parachute-size/
+https://www.rocketreviews.com/index.php
+https://fruitychutes.com/help_for_parachutes/parachute-descent-rate-calculator.htm
+
+150g under a SP-18 (weighs 20g) or a 45cm (18") diameter Estes flat (10g) gives 5m/s 
+
+CDA calc for 40cm diameter flat circular parachute = 0.75 x pi x (0.2 squared) = 0.12
+CDA calc for SP-18 with a ref diameter of 29cm and Cd of 1.5 = 1.5 x pi x (14.5 squared) = 0.099,
+	http://www.randomengineering.co.uk/Random_Aerospace/Parachutes.html says cda = 0.164
+
+
+Balloon calcs
+-------------
+Tracker Build 2 (Blue foam) = 40g + 3 x AA = 50g = 90g
+Parchute SP18 = 20g
+Parchute Estes = 10g
+
+https://ukhas.org.uk/guides:balloon_data
+http://www.randomengineering.co.uk/Random_Aerospace/Balloons.html
+
+36" style options
+Qualtex - max 2g free lift for float, 38g, 875mm flat internal width, .110m3 volume
+Clear Chineese - max 7g free lift for float, 37/38g, 885mm flat internal width, .110m3, can stretch to .148m3 volume
+Grabo - max 3g free lift for float, 44.5g, 945mm flat internal width, .148m3 volume
+
+Using https://ukhas.org.uk/_media/guides:burst3.xls
+2 x Chineese, Assume 0.112cu m burst, needs 10g free lift to burst
+	120g payload & 1.6 m/s ascent = 1.6km burst after 17min with 70g neck lift each from 96 Litres Hydrogen each
+
+2 x Chineese, Assume 0.140cu m burst, needs 10g free lift to burst
+	120g payload & 1.6 m/s ascent = 2.4km burst after 25min with 70g neck lift each from 96 Litres Hydrogen each
+
+2 x Grabo, 0.148 cu m burst, needs 5g free lift to burst
+	120g payload & 1.1m/s ascent = 3km burst after 46min with 65g neck lift each from 98 Litres Hydrogen each
+
+Using http://habhub.org/calc/
+Hwoyee 110g, 2.0m diameter burst - 
+	120g payload & 4 m/s ascent = 18.5km burst after 77min with 260g neck lift from 323 Litres Hydrogen
+	120g payload & 5 m/s ascent = 16.3km burst after 55min with 387g neck lift from 437 Litres Hydrogen
+	120g payload & 6 m/s ascent = 13.5km burst after 38min with 619g neck lift from 645 Litres Hydrogen
+	120g payload & 7 m/s ascent = 10.1km burst after 24min with 1047g neck lift from 1029 Litres Hydrogen
+	
+Hwoyee 550g, 5.0m diameter burst - 
+	120g payload & 4 m/s ascent = 32.0km burst after 134min with 372g neck lift from 782 Litres Hydrogen
+	120g payload & 5 m/s ascent = 30.5km burst after 102min with 572g neck lift from 962 Litres Hydrogen
+
+
+Flight Path Predictions
+-----------------------
+http://predict.habhub.org/hourly/marston/
+http://predict.habhub.org/hourly/edit/marston
+http://predict.habhub.org/
+https://s3research.com/tools/flightpredictor/
+
+PCB Changes todo
+----------------
 Mark LED orientation
 Add IM921?
-
-V4 Issue - IC1 measures 5v_IN rail, not battery
-Text under GPS AerialGPS Aerial length - not corrct for either chip
+Piezo in way of batteries (mount on back)
+V4 Issue - IC1 measures 5v_IN rail, not battery?
+Text under GPS AerialGPS Aerial length - not correct for either chip
+50ohm microstrip feed line for antenna connections?  
 Add serial console port - https://learn.adafruit.com/assets/41071
-
-
-Recieving LoRa
---------------
-
-Portable RX using TTGO device with https://github.com/KevWal/LoraBluetooth and Hab Base - http://www.daveakerman.com/?p=2900 or Hab Explorer - http://www.daveakerman.com/?p=2782
-
-Base RX using Lora Gateway - https://github.com/KevWal/lora-gateway
-
 
 
 Next Flight
@@ -184,26 +241,80 @@ Next Flight
 Launch early to get sunrise
 Pic every 15 seconds
 Increase quality and size of images
-High high mode with bigger pics?
 Change image size and quality depending on uplink comand?
 
 Mount Yagi on roof at home?
 Add Rx and Tx amp option to lora-gateway
 
 
-SSDV Packet Resend
-------------------
-https://www.daveakerman.com/?p=2195
-
-1-minute cycle, tracker listening from 0s to 5s past the minute, and the gateway transmitting at the 2s mark.
-
-
 Aug 2022 Flight
----------------
+===============
 
-Main LoRa Downlink - KW01LR on 434.712 Mode 1
-LoRa Calling Mode - 433.650 evey 50 LoRa packets
-LoRa Uplink - 434.737 Period 6, Cycle 60, Mode 6
-Backup RTTY Downlink - 434.737, 488 shift, 2 packets every 50 LoRa Packets
+Main LoRa Downlink - KW01 on 434.712 Mode 1, telemetry every 11 image packets
+LoRa Calling Mode - 433.650 evey 50 LoRa packets - less than 1 second
+LoRa Uplink - 434.737 first 5 seconds of each 60 second period, Mode 6
+Turned Off - Backup RTTY Downlink - 434.737, 488 shift, 2 packets every 100 LoRa Packets - takes 20 seconds
+
+Packet Format:
+
+LORA0: ID,Ctr,Time,Lat,Lon,Alt,Speed,Head,Sats,Int.Temp,Volts,CDA,Pred.Lat,Pred.Lon,Pred.Land,Pred.TTL,RSSI,SNR,Packets,Command
+
+Camera - 45 deg mount, image every 15 seconds, ssdv -q 4
+Camera settings low = 1024x768, high = 500m 1280x960
 
 
+
+ToDo Before Launch!
+-------------------
+
+Battery Freezer test
+Sort Parachute - SP-18 or Estes 18"? calculate cda
+Sort Picture size, ssdv quality
+Clean SD Card, Backup SD Card
+Remove gps_source config
+Set LORA_Power_0= as required
+Enable Piezo_Pin
+Landing Prediction
+Launch Announcement
+
+
+Launch
+------
+Keep camera cap on till launch (makes first tx pic at launch)
+
+
+Launch Announcement
+-------------------
+
+
+Potential LoRa SSDV Balloon - Sunday 11th, 8am BST - Northamptonshire
+
+Hi
+
+I hope to release a PITS style balloon on the morning of Sunday (11th) around 8am from Northamptonshire.
+
+It will be transmitting:
+	Main LoRa Downlink - 434.712 Mode 1, telemetry every 11 image packets
+	LoRa Calling Mode - 433.650 every 50 LoRa packets
+
+The Telemetry sentence will be:
+	ID,Ctr,Time,Lat,Lon,Alt,Speed,Head,Sats,Int.Temp,Volts,CDA,Pred.Lat,Pred.Lon,Pred.Land,Pred.TTL,RSSI,SNR,Packets,Command
+	
+It is a 100g Latex balloon with a 120g payload, expecting a 16km burst after 55min with 390g neck lift from 440 Litres of Hydrogen.
+
+Descent under a 18" chute with spill hole, expected at 5 m/s, current predicted landing N of Huntingdon.
+
+Prediction here:
+	http://predict.habhub.org/hourly/marston/
+
+Tracking here, callsign KW01:
+	https://tracker.habhub.org/
+	https://amateur.sondehub.org/
+
+Images here, callsign KW01:
+	http://ssdv.habhub.org/
+
+Any questions please ask.  All listeners appreciated!
+
+Cheers
+Kev
