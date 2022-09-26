@@ -145,8 +145,10 @@ https://www.daveakerman.com/?p=2195
 
 Frequencies
 -----------
-IR2030/1/10 433.05-434.79 MHz 10 mW e.r.p. Duty cycle limit 10% or
-IR2030/1/12 433.04-434.79 MHz 10 mW e.r.p. Channel Spacing <= 25 kHz
+433.05 - 434.79MHz @ 10mW erp @ 10% duty cycle or;
+433.05 - 434.79MHz @ 1mW erp (no duty cycle limit) or;
+434.04 - 434.79MHz @ 10mW erp 25 kHz chanel (no duty cycle limit)
+
 LoRa frequency in center frequency, +- 10Khz for SSDC, +-20Khz for uplink
 UK Lowest noise - 434.7 to 434.8
 Ben's advice - 434.737 or 434.712, keep away from 434.725 and 434.750
