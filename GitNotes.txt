@@ -1,14 +1,15 @@
+git clone https://github.com/KevWal/pits.git <- Clone repo
 
-git checkout master <- Switch to master branch
+git checkout master <- Switch to / update from master branch
+git checkout develop <- Switch to / update from develop branch
 
-git checkout master <- Update master branch from GitHub
-
-git checkout develop <- Switch to develop branch
+Change from http to ssh:
+  git remote -v
+  git remote set-url origin git@github.com:KevWal/pits.git
 
 git rebase master <- Update develop from master
 
+git status <- Current status
+
 git commit -a -m "First commit to add EnableADCVolt option" <- commit all changed files in a commit
-
 git push <- upload commits in his branch to GitHub
-
-<- Create a feature branch
