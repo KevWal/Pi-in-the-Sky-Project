@@ -149,7 +149,7 @@ Frequencies
 433.05 - 434.79MHz @ 1mW erp (no duty cycle limit) or;
 434.04 - 434.79MHz @ 10mW erp 25 kHz chanel (no duty cycle limit)
 
-LoRa frequency in center frequency, +- 10Khz for SSDC, +-20Khz for uplink
+LoRa frequency in center frequency, +- 10Khz for SSDV, +-20Khz for uplink
 UK Lowest noise - 434.7 to 434.8
 Ben's advice - 434.737 or 434.712, keep away from 434.725 and 434.750
 434.5 to 435 is Scandanavia repeater output
