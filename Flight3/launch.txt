@@ -1,0 +1,47 @@
+Launch Announcement
+-------------------
+
+Potential LoRa SSDV Balloon - Xday XXth, Xam BST - Northamptonshire
+
+Hi
+
+I hope to release a PITS style balloon on the morning of Xday (XXth) around Xam from Northamptonshire.
+
+It will be transmitting:
+	Main LoRa Downlink - 434.712 Mode 1, telemetry every 11 image packets
+	Backup 4fsk - 
+	
+It is a 550g Hwoyee Latex balloon with a Xg payload, expecting a XXkm burst after XXmin with Xg neck lift from X Litres of Hydrogen.
+
+Descent under a X" chute with spill hole, expected at X m/s, current predicted landing X of XXXX.
+
+Prediction here:
+	https://predict.sondehub.org/?launch_latitude=52.4631&launch_longitude=359.007&launch_altitude=100
+
+Tracking here, callsign KW05:
+	https://amateur.sondehub.org/
+
+Images here, callsign KW05:
+	http://ssdv.habhub.org/
+
+Any questions please ask.  All listeners appreciated!
+
+Cheers
+Kev
+
+
+Launch Box - to add
+-------------------
+
+Milk bottle
+Scales
+Handheld Radio
+TB-Tracker & Battery & Aerial
+
+Tarp
+
+Todo
+-----
+
+Setup Lora-gateway and upload and external aerial.
+Setup Horus Reciever
