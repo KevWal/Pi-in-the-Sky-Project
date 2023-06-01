@@ -1,33 +1,34 @@
 Launch Announcement
 -------------------
 
-Potential LoRa SSDV Balloon - Xday XXth, Xam BST - Northamptonshire
+LoRa SSDV and 4FSK Backup Latex Balloon - Xday XXth, Xam BST - Northamptonshire
 
 Hi
 
 I hope to release a PITS style balloon on the morning of Xday (XXth) around Xam from Northamptonshire.
 
 It will be transmitting:
-	Main LoRa Downlink - 434.712 Mode 1, telemetry every 11 image packets
+	Main LoRa Downlink - 434.712 Mode 1, 1 telemetry packet every 11 image packets
 	Backup 4fsk - 
-	
-It is a 550g Hwoyee Latex balloon with a Xg payload, expecting a XXkm burst after XXmin with Xg neck lift from X Litres of Hydrogen.
 
-Descent under a X" chute with spill hole, expected at X m/s, current predicted landing X of XXXX.
+It is a 500g Hwoyee Latex balloon (which actually weighs about 550g) with (100g main + 25g backup + 25g parachute etc) = 150g payload. At 5m/s ascent rate it needs 0.62kg neck lift, expecting a 33.5km burst after 110min from 1,000 Litres of Hydrogen.  (Calculated here:  http://www.randomengineering.co.uk/Random_Aerospace/Balloons.html)
 
-Prediction here:
+Descent under a 18" SpheraChute at a mass of say 250g, expected at 5.0 m/s (balloon mass left attached could of course be a fair bit higher... (Calculated here: http://www.randomengineering.co.uk/Random_Aerospace/Parachutes.html) 
+
+Current predicted landing X of XXXX.  Prediction here:
 	https://predict.sondehub.org/?launch_latitude=52.4631&launch_longitude=359.007&launch_altitude=100
 
-Tracking here, callsign KW05:
+Tracking here, callsign KW05 and KW06:
 	https://amateur.sondehub.org/
 
 Images here, callsign KW05:
 	http://ssdv.habhub.org/
 
-Any questions please ask.  All listeners appreciated!
+Any questions, things I have missed, mistakes I have made please ask / shout.  All listeners appreciated!
 
-Cheers
+Thanks very much
 Kev
+
 
 
 Launch Box - to add
@@ -40,8 +41,14 @@ TB-Tracker & Battery & Aerial
 
 Tarp
 
+
 Todo
 -----
 
 Setup Lora-gateway and upload and external aerial.
 Setup Horus Reciever
+
+Setup backup tracker
+Test backup AA runtime with 4fsk
+
+Check enough hydrogen
